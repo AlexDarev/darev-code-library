@@ -1,1 +1,12 @@
+.image-reveal {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    overflow: hidden;
+}
 
+.image-reveal img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+    transform-origin: left center;
+}
