@@ -1,3 +1,5 @@
+## Available Variations
+
 Replace only the `clipPath` value in `script.js`.
 
 ### Top → Bottom (Default)
