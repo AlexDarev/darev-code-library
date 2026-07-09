@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Image Scale
     gsap.from(".image-reveal img", {
-        duration: 1,
+        duration: 2,
         scale: 1.5,
         ease: "power2.out",
         scrollTrigger: {
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Clip-path Reveal
     gsap.from(".image-reveal", {
-        duration: 1,
+        duration: 2,
         clipPath: "polygon(0 0, 100% 0, 100% 0%, 0 0%)",
         ease: "power1.out",
         scrollTrigger: {
