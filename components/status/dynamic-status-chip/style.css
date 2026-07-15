@@ -1,1 +1,95 @@
+.island_wrap {
+  width: 205px;
+  height: 36px;
+  padding: 0 16px;
 
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  box-sizing: border-box;
+  overflow: hidden;
+
+  border-radius: 24px;
+  background: transparent;
+
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+
+  white-space: nowrap;
+}
+
+/* Status dot */
+.island_dot {
+  width: 5px;
+  height: 5px;
+
+  position: absolute;
+  top: 50%;
+  left: 16px;
+
+  border-radius: 50%;
+  background-color: #00c851;
+
+  transform: translateY(-50%) scale(1);
+
+  transition:
+    background-color 0.35s ease,
+    box-shadow 0.35s ease,
+    transform 0.35s ease;
+}
+
+/* Text viewport */
+.island_texts {
+  width: 160px;
+  height: 16px;
+  margin-left: 10px;
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* Vertical slider */
+.island_slides {
+  display: flex;
+  flex-direction: column;
+
+  transform: translateY(0);
+
+  transition:
+    transform 0.65s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Individual slide */
+.island_flex {
+  height: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+
+  flex-shrink: 0;
+}
+
+/* Text styles */
+.text_light {
+  color: #a1a1a1;
+  font-weight: 400;
+}
+
+.text_primary {
+  color: #efefef;
+  font-weight: 400;
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .island_slides,
+  .island_dot {
+    transition: none;
+  }
+}
