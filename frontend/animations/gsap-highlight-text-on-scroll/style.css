@@ -1,1 +1,37 @@
+.scroll-text-section{
+    min-height:140vh;
+    padding:30vh 0;
+}
+
+.scroll-text-reveal h2{
+
+    width:85%;
+    margin:0;
+
+    color:rgba(255,255,255,.12);
+
+    font-size:clamp(40px,5vw,84px);
+    line-height:1.05;
+    letter-spacing:-0.04em;
+    font-weight:500;
+
+    transition:color .3s ease;
+}
+
+.scroll-text-reveal .word{
+    display:inline-block;
+}
+
+.scroll-text-reveal .char{
+    display:inline-block;
+}
+
+@media(max-width:767px){
+
+.scroll-text-reveal h2{
+
+    width:100%;
+    font-size:clamp(32px,10vw,48px);
+
+}
 
